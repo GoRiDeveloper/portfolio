@@ -1,0 +1,132 @@
+@use "../../../abstracts/mixins" as m;
+
+.homePresentation {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/backgrounds/synthwave-background.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+
+    @include m.telephone {
+
+            padding: 0 2rem;
+
+    }
+
+    &__presentationContent {
+
+        margin: .5rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(38 0 49 / .15);
+        border: 1px solid rgb(255 255 255 / .18);
+        border-radius: 1rem;
+        box-shadow: 0 var(--min-size-1) var(--tiny-size-3) 0 rgb(31 38 135 / .37);
+        color: var(--secondary-color);
+        text-align: center;
+        letter-spacing: -1px;
+        backdrop-filter: blur(1.125rem);
+        -webkit-backdrop-filter: blur(1.125rem);
+        opacity: 1;
+        z-index: 2;
+
+    }
+
+    &__presentation {
+
+        position: relative;
+        display: inline-block;
+
+    }
+
+    &__heading {
+
+        position: relative;
+        @include m.syntHeading(0);
+
+    }
+
+    &__subtitle {
+
+        position: absolute;
+        top: 80%;
+        right: -10%;
+        color: var(--primary-color);
+        font-size: 1.3rem;
+        font-family: var(--main-font);
+        text-align: right;
+        text-transform: capitalize;
+        text-shadow: 1px 1px #fff,
+                    -1px -1px #fff,
+                    -1px 1px #fff,
+                     1px -1px #fff,
+                     1px 0px #fff,
+                    -1px 0px #fff,
+                     0px -1px #fff,
+                     0px 1px #fff,
+                     0px 0px 12px var(--primary-color);
+        letter-spacing: -1px;
+        transform: skewY(-10deg);
+        z-index: 1;
+
+        @include m.telephone {
+
+            top: 90%;
+            right: 10%;
+            font-size: 1.5rem;
+
+        }
+
+        @include m.tablet {
+
+            top: 80%;
+            right: 20%;
+            font-size: 2rem;
+
+        }
+
+    }
+
+    &__presentationButtons {
+
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+    }
+
+    &__presentationBtn {
+
+        @include m.menuBtn();
+        position: relative;
+        inset: unset;
+
+    }
+
+    &__city {
+
+        position: absolute;
+        bottom: -10rem;
+        left: 50%;
+        width: 64rem;
+        transform: translateX(-50%);
+        z-index: 1;
+
+    }
+
+}

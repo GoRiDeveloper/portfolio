@@ -1,0 +1,141 @@
+@use "../../../abstracts/mixins" as m;
+
+.cardProject {
+
+    &__project {
+
+        height: 24rem;
+        background-color: rgb(38 0 49 / .15);
+        border: 1px solid rgb(255 255 255 / .18);
+        border-radius: .65rem;
+        box-shadow: 0 var(--min-size-1) var(--tiny-size-3) 0 rgb(31 38 135 / .37);
+        backdrop-filter: blur(1.125rem);
+        -webkit-backdrop-filter: blur(1.125rem);
+        transition: all .3s ease;
+        overflow: hidden;
+        
+        &--hide {
+
+            filter: blur(5px);
+            opacity: .5;
+            pointer-events: none;
+    
+        }
+
+    }
+
+    &__projectRedirectInfo {
+
+        position: relative;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: rgba(26, 2, 32, 0.26);
+        perspective: 300px;
+        color: var(--util-color);
+        overflow: hidden;
+
+        &:hover {
+
+            & .cardProject__projectImage {
+
+                transform: rotateY(110deg);
+                z-index: 0;
+
+            }
+
+            & .cardProject__projectBtn {
+
+                opacity: 1;
+
+            }
+
+        }
+
+    }
+
+    &__projectImage {
+
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all .6s ease-in-out;
+        transform-origin: 0 100% 0;
+        opacity: 1;
+        overflow: hidden;
+        z-index: 2;
+
+    }
+
+    &__projectBtn {
+
+        @include m.syntBtn(false);
+        opacity: 0;
+        z-index: 1;
+
+    }
+
+    &__projectInfo {
+
+        padding: 1.2rem;
+        max-width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
+
+    }
+
+    &__projectHeading {
+
+        width: 100%;
+        color: var(--util-color);
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        @include m.telephone {
+
+            font-size: 1.2rem;
+
+        }
+
+    }
+
+    &__projectDescription {
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        font-size: .75rem;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        box-orient: vertical;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        overflow: hidden;
+
+        @include m.telephone {
+
+            font-size: .9rem;
+
+        }
+
+    }
+
+    &__projectBtnMoreInfo {
+
+        width: max-content;
+        @include m.syntBtn(true);
+
+    }
+
+}

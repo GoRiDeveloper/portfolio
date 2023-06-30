@@ -1,0 +1,27 @@
+.header {
+
+    position: fixed;
+    top: 0;
+    pointer-events: none;
+    z-index: 5;
+    
+    &__triangle {
+
+        width: 9rem;
+        height: 9rem;
+        display: flex;
+        background-color: var(--bg-aside-menu);
+        clip-path: polygon(100% 0,0 0,0 100%);
+
+    }
+
+    &__logo {
+
+        position: absolute;
+        top: .2rem;
+        left: 0;
+        width: 6rem;
+
+    }
+
+}

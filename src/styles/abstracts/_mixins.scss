@@ -1,0 +1,302 @@
+@use "variables" as v;
+
+@mixin telephone {
+    @media (min-width: v.$telephone-bp) {
+        @content;
+    };
+};
+
+@mixin tablet {
+    @media (min-width: v.$tablet-bp) {
+        @content;
+    };
+};
+
+@mixin tablet-fix {
+    @media (min-width: v.$tablet-bp-fix) {
+        @content;
+    };
+};
+
+@mixin desktop {
+    @media (min-width: v.$desktop-bp) {
+        @content;
+    };
+};
+
+@mixin textShwAnim {
+
+    @keyframes textShwAnim {
+
+        0%, 100% {
+
+            text-shadow: 0 0 1vw var(--primary-color-light),
+                         0 0 2vw var(--primary-color-light),
+                         0 0 3vw var(--primary-color-light),
+                         0 0 3vw var(--primary-color-light),
+                         0 0 .3vw var(--primary-color-light),
+                         .3vw .3vw .1vw var(--primary-color-light);
+            color: var(--tertiary-color-light);
+
+        }
+
+        50% {
+
+            text-shadow: 0 0 .4vw var(--tertiary-color), 
+                         0 0 1.5vw var(--tertiary-color), 
+                         0 0 3vw var(--tertiary-color), 
+                         0 0 3vw var(--tertiary-color),
+                         0 0 .2vw var(--tertiary-color),
+                         .3vw .3vw .1vw var(--secondary-color);
+            color: var(--tertiary-color-light-2);
+
+        }
+        
+    };
+
+};
+
+@mixin menuBtn {
+
+    position: fixed;
+    margin: 1.5rem;
+    padding: .7rem;
+    bottom: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    opacity: 1;
+    transition: all .2s ease;
+    pointer-events: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 6;
+
+    &:hover {
+
+        transform: scale(1.08);
+
+    }
+
+    &::before {
+
+        content: "";
+        position: absolute;
+        inset: 0 0;
+        width: 4rem;
+        height: 4rem;
+        background: linear-gradient(315deg, #00ccff, #d400d4);
+        transition: .3s;
+        filter: blur(4px);
+        animation: rotateBtn 1s linear infinite;
+        z-index: -2;
+        @include rotateBtn();
+
+    }
+
+    &::after {
+
+        content: "";
+        position: absolute;
+        inset: 6px;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        z-index: -1;
+
+    }
+
+}
+
+@mixin rotateBtn {
+
+    @keyframes rotateBtn {
+
+        0% {
+
+            transform: rotate(0deg);
+
+        }
+
+        100% {
+
+            transform: rotate(360deg);
+
+        }
+
+    }
+
+}
+
+@mixin syntBtn ($backdrop) {
+
+    padding: .65rem 1.4rem;
+    background-color: rgb(38 0 49 / .15);
+    color: var(--util-color);
+    font-size: .75rem;
+    border: 1px solid rgb(255 255 255 / .18);
+    border-radius: .35rem;
+
+    @if $backdrop {
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
+
+    transition: all .2s linear;
+    cursor: pointer;
+
+    @include tablet {
+
+        font-size: 1rem;
+
+    }
+
+    &:hover {
+
+        color: var(--white);
+        box-shadow: 0 var(--min-size-1) var(--tiny-size-3) 0 rgb(31 38 135 / .37);
+
+    }
+
+}
+
+@mixin syntHeading ($leftPos) {
+
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+
+    @include telephone {
+
+        font-size: 2.5rem;
+
+    }
+    @include tablet {
+
+        font-size: 3.3rem;
+
+    }
+    @include desktop {
+
+        font-size: 3.8rem;
+
+    }
+
+    &--title {
+
+        background: linear-gradient(
+            var(--black) 0%,
+            var(--bg-main) 22%,
+            var(--modal-color) 50%,
+            var(--secondary-color-light) 51%,
+            var(--primary-color-light-2) 78%,
+            var(--primary-color) 78%,
+            var(--white) 100%
+        );
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::before {
+
+            content: attr(data-text);
+            position: absolute;
+
+        }
+
+        &::after {
+
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: $leftPos;
+            text-shadow: 3px 0px #fff,
+                        -3px 0px #fff,
+                        0px 3px #fff,
+                        0px -3px #fff,
+                        3px 3px #fff,
+                        -3px -3px #fff,
+                        3px -3px #fff,
+                        -3px 3px #fff;
+            opacity: 0.2;
+
+        }
+
+    }
+
+}
+
+@mixin translateImage {
+
+    @keyframes translateImage {
+        
+        0%, 100% {
+
+            transform:  translateX(-25rem);
+
+        }
+
+        50% {
+
+            transform:  translateX(25rem);
+
+        }
+
+    }
+
+}
+
+@mixin lights {
+
+    @keyframes city__lights {
+
+        0% {
+            
+            opacity: 1;
+
+        } 
+        50% {
+
+            opacity: 0;
+
+        } 
+        100% {
+
+            opacity: 1;
+            
+        }
+
+    }
+
+}
+
+@mixin blobMove {
+
+    @keyframes blobMove {
+        
+        0% {
+
+            transform: translate(-25.25rem, -6.125rem) rotate(-90deg);
+            border-radius: 24% 76% 35% / 27% 36% 64% 73%;
+
+        }
+        100% {
+
+            transform: translate(31.25rem, 6.25rem) rotate(-10deg);
+            border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+
+        }
+
+    }
+
+}
+
+@mixin showRight {
+
+    @keyframes showRight {
+        100% {
+            width: 0;
+        }
+    }
+
+}

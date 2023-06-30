@@ -1,0 +1,36 @@
+#root {
+
+    min-height: inherit;
+
+}
+
+.theme {
+
+    --primary-color: #f40ad5;
+    --primary-color-light: #fa16fa;
+    --primary-color-light-2:  #fd48e5;
+    --secondary-color: #1c0a40;
+    --secondary-color-light: #3c1480;
+    --secondary-color-light-2: #552d85;
+    --tertiary-color: #7e0b80;
+    --tertiary-color-light: #b458ff;
+    --tertiary-color-light-2: #552d85;
+
+    --util-color: #ff00e0;
+    --util-color-2: #933bff;
+    --util-color-3: #00c8ff;
+    
+    --bg-aside-menu: #18003C;
+    --bg-main: #310f62;
+
+    --heading-color: #026EED;
+    --text-color: #56A5F1;
+    --icons-color: #D5F3FF;
+    --modal-color: #54B6E9;
+
+    --red: rgb(221, 58, 58);
+    --white: #fff;
+    --black: #000;
+
+
+}

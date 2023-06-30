@@ -1,0 +1,43 @@
+@use "../../abstracts/mixins" as m;
+
+.mainLayout {
+
+    padding: .8rem 0;
+    max-width: 100vw;
+    min-height: inherit;
+    background-color: var(--bg-aside-menu);
+    color: var(--white);
+    font-family: var(--secondary-font);
+
+    @include m.tablet {
+
+        padding: .8rem .8rem .8rem 0;
+
+    }
+
+    &__content {
+
+        position: relative;
+        margin: 0 auto;
+        max-width: 85rem;
+        width: 100%;
+        min-height: inherit;
+        background-color: var(--bg-main);
+        border-radius: 1rem;
+
+    }
+
+    &__exitBtn {
+
+        @include m.menuBtn();
+
+        &--close {
+
+            pointer-events: none;
+            opacity: 0;
+
+        }
+
+    }
+
+}

@@ -1,0 +1,31 @@
+@use "../../abstracts/mixins" as m;
+
+.logo {
+
+    padding: 1rem 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__image {
+
+        width: var(--logo-width);
+        
+    }
+
+    &__heading {
+
+        color: var(--primary-color-light-2);
+        font-size: 2.4rem;
+        font-family: var(--main-font);
+        font-weight: 400;
+        letter-spacing: -1px;
+        text-shadow: 0 0 3vw var(--primary-color);
+        opacity: 1;
+        transition: opacity .1s ease-in;
+        animation: textShwAnim 1s infinite;
+        @include m.textShwAnim();
+
+    }
+
+}

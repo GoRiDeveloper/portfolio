@@ -1,0 +1,131 @@
+[
+    {
+        "name": "projects",
+        "projects": [
+
+            {
+                "id": 121314,
+                "name": "Servidor API Rest Ecommerce",
+                "desc": "API Data On Wire de un Ecommerce, con sistema de sesiones, usuarios, productos, carritos de usuario y ordenes de usuario, hecho con NodeJS y ExpressJS.",
+                "localImg": "/assets/img/projects/ecommerce-api.webp",
+                "technologies": ["NodeJS", "ExpressJS"],
+                "redirectLinks": [
+                    {
+                        "id": 238302,
+                        "name": "Código",
+                        "link": "https://github.com/GoRiJ/ApiEcommerce.git"
+                    }
+                ]
+            },
+            {
+                "id": 9856,
+                "name": "Bienestar en Fertilidad",
+                "desc": "Sitio Web informativo sobre el servicio psicológico enfocado a la mujer que este transitando por dificultades en la fertilidad, hecho con HTML, Bootstrap y SASS.",
+                "localImg": "/assets/img/projects/bienestar-web.webp",
+                "technologies": ["HTML", "CSS", "JavaScript", "SASS", "Bootstrap"],
+                "redirectLinks": [
+                    {
+                        "id": 1338546,
+                        "name": "Sitio Web",
+                        "link": "http://www.bienestarenfertilidad.com.ar/"
+                    },
+                    {
+                        "id": 8934100,
+                        "name": "Código",
+                        "link": "https://github.com/GheraldineSalazarL/Web_Bienestar_en_Fertilidad"
+                    }
+                ]
+            },
+            {
+                "id": 826532,
+                "name": "Contexto",
+                "desc": "Sitio Web informativo sobre la venta de productos de higiene íntima reutilizables para mujeres, hecho con HTML, CSS y JavaScript.",
+                "localImg": "/assets/img/projects/contexto-web.webp",
+                "technologies": ["HTML", "CSS", "JavaScript"],
+                "redirectLinks": [
+                    {
+                        "id": 98254910324,
+                        "name": "Sitio Web",
+                        "link": "https://contextoweb.netlify.app/"
+                    },
+                    {
+                        "id": 725400112,
+                        "name": "Código",
+                        "link": "https://github.com/GoRiJ/ConTexto_Web.git"
+                    }
+                ]
+            },
+            {
+                "id": 6542,
+                "name": "GunsGR",
+                "desc": "Sitio Web de un Ecommerce de armas falso, hecho con CSS, ReactJS y Firebase.",
+                "localImg": "/assets/img/projects/gunsgr-web.webp",
+                "technologies": ["ReactJS", "CSS"],
+                "redirectLinks": [
+                    {
+                        "id": 871,
+                        "name": "Sitio Web",
+                        "link": "https://gunsgr.netlify.app/"
+                    },
+                    {
+                        "id": 81630101,
+                        "name": "Código",
+                        "link": "https://github.com/GoRiJ/Guns_Gonzalez_Rivera.git"
+                    }
+                ]
+            },
+            {
+                "id": 1653291,
+                "name": "Pokédex",
+                "desc": "Sitio Web para mostrar la información de los personajes de Pokemón, que utiliza la API de pokeapi, hecho con ReactJS y SASS.",
+                "localImg": "/assets/img/projects/pokedex-web.webp",
+                "technologies": ["ReactJS", "SASS"],
+                "redirectLinks": [
+                    {
+                        "id": 957914354,
+                        "name": "Sitio Web",
+                        "link": "https://pokedex-gdev.netlify.app/"
+                    },
+                    {
+                        "id": 18132093764,
+                        "name": "Código",
+                        "link": "https://github.com/GoRiJ/pokedex.git"
+                    }
+                ]
+            },
+            {
+                "id": 101010,
+                "name": "Juego de BlackJack",
+                "desc": "Juego Web de BlackJack, hecho con ReactJS y Bootstrap.",
+                "localImg": "/assets/img/projects/blackjack-game.webp",
+                "technologies": ["ReactJS", "Bootstrap"],
+                "redirectLinks": [
+                    {
+                        "id": 18146789,
+                        "name": "Sitio Web",
+                        "link": "https://gorij.github.io/vite-blackjack/"
+                    },
+                    {
+                        "id": 8525545371,
+                        "name": "Código",
+                        "link": "https://github.com/GoRiJ/vite-blackjack.git"
+                    }
+                ]
+            }
+    
+        ]
+    },
+    {
+        "name": "about",
+        "about": [
+            {
+                "id": 2003,
+                "name": "Acerca de Mi"
+            },
+            {
+                "id": 718346,
+                "name": "Acerca de Éste Portafolio"
+            }
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+@use "../../abstracts/mixins" as m;
+
+.city {
+
+    &__lights {
+
+        animation: city__lights 2s infinite ease-in-out;
+        @include m.lights();
+
+    }
+
+    &__star {
+          
+        animation: star 10s linear infinite;
+
+        @keyframes star {
+            
+            0% {
+
+                transform: translateY(0);
+
+            }
+            25% {
+                
+                transform: translateY(15px);
+            
+            }
+            75% {
+                
+                transform: translateY(-15px);
+            
+            }
+            100% {
+                
+                transform: translateY(0);
+            
+            }
+
+        }
+
+    }
+
+}
