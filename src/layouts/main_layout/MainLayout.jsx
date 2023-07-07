@@ -24,7 +24,7 @@ export const MainLayout = () => {
                     }`}
                     onClick={handleAsideMenu}
                 >
-                    <img src="/assets/img/icons/sidebar_icons/menu.svg" className="header__exitImage" alt="icono de menu"/>
+                    <img src="/assets/img/icons/sidebar_icons/menu.svg" className="header__exitImage" alt="icono de menu" width="35px" height="35px" />
                 </button>
 
             </section>

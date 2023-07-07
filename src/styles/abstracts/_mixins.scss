@@ -187,7 +187,7 @@
             var(--black) 0%,
             var(--bg-main) 22%,
             var(--modal-color) 50%,
-            var(--secondary-color-light) 51%,
+            var(--util-color-2) 51%,
             var(--primary-color-light-2) 78%,
             var(--primary-color) 78%,
             var(--white) 100%
@@ -298,5 +298,21 @@
             width: 0;
         }
     }
+
+}
+
+@mixin rotateCarousel {
+
+    @keyframes rotateCarousel {
+        
+        from {
+            transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+        }
+
+    };
 
 }

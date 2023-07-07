@@ -7,7 +7,7 @@ export const HomeAboutMe = () => {
 
     return (
 
-        <div id="about" className="homeAboutMe">
+        <section id="about" className="section homeAboutMe">
             <h2 className="homeAboutMe__heading">
                 <span className="homeAboutMe__heading--title" data-text="ACERCA DE MI"> ACERCA DE MI </span>
             </h2>
@@ -20,7 +20,7 @@ export const HomeAboutMe = () => {
                 </label>
                 <div className="homeAboutMe__light"></div>
                 <figure className="homeAboutMe__imageContainer">
-                    <img loading="lazy" src="/assets/img/personal/GoRi.webp" alt="GoRiDev" className="homeAboutMe__image" />
+                    <img loading="lazy" src="/assets/img/personal/GoRi.webp" alt="GoRiDev" className="homeAboutMe__image" width="142px" height="142px" />
                 </figure>
                 <section className="homeAboutMe__about">
                     
@@ -39,7 +39,7 @@ export const HomeAboutMe = () => {
                 </section>
 
             </article>
-        </div>
+        </section>
 
     );
 

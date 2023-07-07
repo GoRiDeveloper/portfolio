@@ -6,7 +6,7 @@
             {
                 "id": 121314,
                 "name": "Servidor API Rest Ecommerce",
-                "desc": "API Data On Wire de un Ecommerce, con sistema de sesiones, usuarios, productos, carritos de usuario y ordenes de usuario, hecho con NodeJS y ExpressJS.",
+                "desc": "API Data On Wire de un Ecommerce, con sistema de sesiones, usuarios, productos, carritos de usuario y ordenes de usuario, hecho con NodeJS y ExpressJS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
                 "localImg": "/assets/img/projects/ecommerce-api.webp",
                 "technologies": ["NodeJS", "ExpressJS"],
                 "redirectLinks": [
@@ -15,12 +15,13 @@
                         "name": "Código",
                         "link": "https://github.com/GoRiJ/ApiEcommerce.git"
                     }
-                ]
+                ],
+                "pathname": "servidor-api-rest-ecommerce"
             },
             {
                 "id": 9856,
                 "name": "Bienestar en Fertilidad",
-                "desc": "Sitio Web informativo sobre el servicio psicológico enfocado a la mujer que este transitando por dificultades en la fertilidad, hecho con HTML, Bootstrap y SASS.",
+                "desc": "Sitio Web informativo sobre el servicio psicológico enfocado a la mujer que este transitando por dificultades en la fertilidad, hecho con HTML, Bootstrap y SASS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
                 "localImg": "/assets/img/projects/bienestar-web.webp",
                 "technologies": ["HTML", "CSS", "JavaScript", "SASS", "Bootstrap"],
                 "redirectLinks": [
@@ -34,12 +35,13 @@
                         "name": "Código",
                         "link": "https://github.com/GheraldineSalazarL/Web_Bienestar_en_Fertilidad"
                     }
-                ]
+                ],
+                "pathname": "bienestar-en-fertilidad"
             },
             {
                 "id": 826532,
                 "name": "Contexto",
-                "desc": "Sitio Web informativo sobre la venta de productos de higiene íntima reutilizables para mujeres, hecho con HTML, CSS y JavaScript.",
+                "desc": "Sitio Web informativo sobre la venta de productos de higiene íntima reutilizables para mujeres, hecho con HTML, CSS y JavaScript. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
                 "localImg": "/assets/img/projects/contexto-web.webp",
                 "technologies": ["HTML", "CSS", "JavaScript"],
                 "redirectLinks": [
@@ -53,12 +55,13 @@
                         "name": "Código",
                         "link": "https://github.com/GoRiJ/ConTexto_Web.git"
                     }
-                ]
+                ],
+                "pathname": "contexto"
             },
             {
                 "id": 6542,
                 "name": "GunsGR",
-                "desc": "Sitio Web de un Ecommerce de armas falso, hecho con CSS, ReactJS y Firebase.",
+                "desc": "Sitio Web de un Ecommerce de armas falso, hecho con CSS, ReactJS y Firebase. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
                 "localImg": "/assets/img/projects/gunsgr-web.webp",
                 "technologies": ["ReactJS", "CSS"],
                 "redirectLinks": [
@@ -72,12 +75,13 @@
                         "name": "Código",
                         "link": "https://github.com/GoRiJ/Guns_Gonzalez_Rivera.git"
                     }
-                ]
+                ],
+                "pathname": "gunsgr"
             },
             {
                 "id": 1653291,
                 "name": "Pokédex",
-                "desc": "Sitio Web para mostrar la información de los personajes de Pokemón, que utiliza la API de pokeapi, hecho con ReactJS y SASS.",
+                "desc": "Sitio Web para mostrar la información de los personajes de Pokemón, que utiliza la API de pokeapi, hecho con ReactJS y SASS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
                 "localImg": "/assets/img/projects/pokedex-web.webp",
                 "technologies": ["ReactJS", "SASS"],
                 "redirectLinks": [
@@ -91,12 +95,13 @@
                         "name": "Código",
                         "link": "https://github.com/GoRiJ/pokedex.git"
                     }
-                ]
+                ],
+                "pathname": "pokedex"
             },
             {
                 "id": 101010,
                 "name": "Juego de BlackJack",
-                "desc": "Juego Web de BlackJack, hecho con ReactJS y Bootstrap.",
+                "desc": "Juego Web de BlackJack, hecho con ReactJS y Bootstrap. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
                 "localImg": "/assets/img/projects/blackjack-game.webp",
                 "technologies": ["ReactJS", "Bootstrap"],
                 "redirectLinks": [
@@ -110,7 +115,8 @@
                         "name": "Código",
                         "link": "https://github.com/GoRiJ/vite-blackjack.git"
                     }
-                ]
+                ],
+                "pathname": "blackjack-game"
             }
     
         ]
@@ -120,12 +126,37 @@
         "about": [
             {
                 "id": 2003,
-                "name": "Acerca de Mi"
+                "name": "Acerca de Mi",
+                "redirect": "#about"
             },
             {
                 "id": 718346,
-                "name": "Acerca de Éste Portafolio"
+                "name": "Acerca de Éste Portafolio",
+                "redirect": "https://github.com/GoRiJ/portfolio.git"
             }
+        ]
+    },
+    {
+        "name": "skills",
+        "skills": [
+            "apollo",
+            "bootstrap",
+            "css",
+            "docker",
+            "expressjs",
+            "firebase",
+            "git",
+            "github",
+            "graphql",
+            "html",
+            "javascript",
+            "mongodb",
+            "nextjs",
+            "nodejs",
+            "reactjs",
+            "sass",
+            "tailwind",
+            "typescript"
         ]
     }
 ]

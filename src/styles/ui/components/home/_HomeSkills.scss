@@ -1,3 +1,82 @@
+@use "../../../abstracts/variables" as v;
 @use "../../../abstracts/mixins" as m;
 
-.homeSkills {}
+.homeSkills {
+
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__heading {
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @include m.syntHeading(unset);
+
+    }
+
+    &__container {
+
+        position: relative;
+        padding-top: 5rem;
+        width: 6.875rem;
+        height: 8.75rem;
+        perspective: 62.5rem;
+
+    }
+
+    &__carousel {
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        animation: rotateCarousel 25s infinite linear;
+        @include m.rotateCarousel();
+
+        &:hover {
+
+            animation-play-state: paused;
+
+        }
+
+    }
+
+    &__figure {
+
+        position: absolute;
+        display: block;
+        top: .625rem;
+        left: .625rem;
+        width: 11.625rem;
+        height: 7.25rem;
+        background-color: transparent;
+
+        $degSummary: 0;
+
+        @for $i from 1 through v.$skills {
+
+            &:nth-child(#{$i}) {
+
+                transform: rotateY($degSummary + deg) translateZ(22rem);
+
+            }
+
+            $degSummary: $degSummary + 20;
+
+        }
+
+    }
+
+    &__image {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+}

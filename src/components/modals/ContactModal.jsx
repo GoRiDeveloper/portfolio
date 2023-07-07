@@ -2,7 +2,7 @@ export const ContactModal = ({ showModal, closeModal }) => {
 
     return (
 
-        <dialog className={`contactModal ${
+        <dialog id="contact" className={`section contactModal ${
             showModal && "contactModal--show"
         }`}>
 

@@ -17,7 +17,6 @@
     backdrop-filter: blur(.938rem);
     -webkit-backdrop-filter: blur(.938rem);
     transition: all .7s cubic-bezier(.5, 0, 0, 1);
-    overflow: hidden;
 
     @include m.desktop {
 
@@ -164,8 +163,12 @@
 
     &__contactButtons {
 
+        position: absolute;
+        bottom: -1.5rem;
+        width: 100%;
         margin-top: 1rem;
         display: flex;
+        justify-content: space-evenly;
         gap: 1rem;
 
     }
@@ -173,7 +176,20 @@
     &__contactBtn {
 
         width: max-content;
-        @include m.syntBtn(true);
+        @include m.syntBtn(false);
+        background-color: var(--bg-aside-menu);
+
+        @include m.tablet {
+
+            width: 12%;
+
+        }
+
+        @include m.desktop {
+
+            width: max-content;
+
+        }
 
     }
 

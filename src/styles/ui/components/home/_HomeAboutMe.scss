@@ -2,8 +2,7 @@
 
 .homeAboutMe {
 
-    //margin-top: 5rem;
-    margin: 5rem 0;
+    margin: 10rem 0 5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -176,6 +175,7 @@
         border-radius: 1rem;
         box-shadow: 0 var(--min-size-1) var(--tiny-size-3) 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(1.125rem);
+        -webkit-backdrop-filter: blur(1.125rem);
         transform: scale(.8);
         border-radius: .625rem;
 

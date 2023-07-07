@@ -5,9 +5,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 16.25rem;
-    min-height: inherit;
-    height: 100%;
     background-color: var(--bg-aside-menu);
     color: var(--util-color);
     font-weight: 500;
@@ -121,6 +120,48 @@
         transition: margin .2s ease;
         cursor: pointer;
 
+        &--active {
+
+            margin-left: 1rem;
+            background-color: var(--bg-main);
+
+
+            & .asideMenu__link, .asideMenu__subLink {
+
+                color: var(--white);
+
+            }
+
+            &::before {
+
+                content: "";
+                position: absolute;
+                top: -1.875rem;
+                right: 8px;
+                width: 1.875rem;
+                height: 1.875rem;
+                background-color: transparent;
+                border-radius: 100%;
+                box-shadow: 1.25rem 1.25rem 0 var(--min-size) var(--bg-main);
+
+            }
+
+            &::after {
+
+                content: "";
+                position: absolute;
+                bottom: -1.875rem;
+                right: 8px;
+                width: 1.875rem;
+                height: 1.875rem;
+                background-color: transparent;
+                border-radius: 100%;
+                box-shadow: 1.25rem -1.25rem 0 var(--min-size) var(--bg-main);
+
+            }
+
+        }
+
     }
 
     &__link {
@@ -150,9 +191,6 @@
         pointer-events: none;
         transition: opacity .3s ease;
         transform: translateX(-50%);
-        scrollbar-width: thin;
-        scrollbar-color: transparent;
-        scrollbar-base-color: red;
         overflow-y: auto;
         z-index: 6;
 
@@ -170,6 +208,12 @@
             border-radius: .2rem;
 
         }
+
+    }
+
+    &__subItem {
+
+        line-height: 1.15rem;
 
     }
 

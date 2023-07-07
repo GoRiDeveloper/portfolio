@@ -1,0 +1,154 @@
+@use "../../abstracts/mixins" as m;
+
+.project {
+
+    padding: 6rem 1rem;
+    background-image: url(/assets/img/backgrounds/section-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include m.telephone {
+
+        padding: 6rem 2rem;
+
+    }
+
+    &__container {
+
+        position: relative;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        max-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #26003126;
+        border: 1px solid rgb(255 255 255 / .18);
+        box-shadow: 0 var(--min-size-1) var(--tiny-size-3) 0 #1f26875e;
+        backdrop-filter: blur(1.125rem);
+        -webkit-backdrop-filter: blur(1.125rem);
+        border-radius: 1rem;
+
+    }
+
+    &__imageBox {
+
+        position: relative;
+        top: -3rem;
+        left: 35%;
+        width: 70%;
+        height: max-content;
+        transform: translate(-50%);
+
+    }
+
+    &__image {
+
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+    &__content {
+
+        padding-bottom: 1.5rem;
+        position: relative;
+        top: -2rem;
+
+        @include m.tablet {
+
+            top: -1rem;
+
+        }
+
+    }
+
+    &__heading {
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @include m.syntHeading(unset);
+        font-size: .67rem;
+        padding-bottom: .5rem;
+
+        @include m.telephone {
+
+            font-size: 1.013rem;
+
+        }
+        @include m.tablet {
+
+            font-size: 2.3rem;
+
+        }
+        @include m.desktop {
+
+            font-size: 2.78rem;
+
+        }
+
+    }
+
+    &__desc {
+
+        padding: .5rem;
+        font-size: .7rem;
+
+        
+    }
+
+    &__technologies {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__technologyHeading {
+
+        color: var(--primary-color);
+        font-weight: 600;
+        font-style: italic;
+
+        @include m.telephone {
+
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+    &__technologiesList {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.8rem;
+
+    }
+
+    &__technology {
+
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__technologyText {
+
+        font-size: .7rem;
+
+        @include m.telephone {
+
+            font-size: .9rem;
+
+        }
+
+
+    }
+
+}

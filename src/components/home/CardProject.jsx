@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TECHNOLOGIES_VALUES = {
     Basics: ["HTML", "CSS", "JavaScript"],
     Backend: ["NodeJS", "ExpressJS"],
@@ -12,7 +14,8 @@ export const CardProject = ({ projectInfo }) => {
         localImg,
         redirectLinks,
         name,
-        desc
+        desc,
+        pathname
 
     } = projectInfo;
 
@@ -72,7 +75,12 @@ export const CardProject = ({ projectInfo }) => {
             <div className="cardProject__projectInfo">
                 <h3 className="cardProject__projectHeading"> { name || "Sin Información" } </h3>
                 <p className="cardProject__projectDescription"> { desc || "Sin Información" } </p>
-                <a href="#" className="cardProject__projectBtnMoreInfo"> Ver Más </a>
+                <Link
+                    className="cardProject__projectBtnMoreInfo"
+                    to={`/${pathname}`}
+                >
+                    Ver Más
+                </Link>
             </div>
         </article>
 

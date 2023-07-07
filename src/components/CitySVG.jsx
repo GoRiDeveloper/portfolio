@@ -1,5 +1,8 @@
 export const CitySVG = () => {
 
+    const { matches: matchesTelephone } = matchMedia("(max-width: 400px)");
+    const { matches: matchesTablet } = matchMedia("(max-width: 768px)");
+
     return (
 
         <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
@@ -25,26 +28,39 @@ export const CitySVG = () => {
             <rect x="520" y="458" width="120px" height="10px" fill="#f5e6c4"/>
             <rect x="665" y="458" width="10px" height="10px" fill="#14d3c2"/>
             <rect x="680" y="458" width="115px" height="10px" fill="#f5e6c4"/>
-
-            <rect x="155" y="231" width="70px" height="220px" fill="#321551 "/>      
-            <rect x="185" y="151" width="170px" height="300px" fill="#321551 "/>
-            <rect x="195" y="171" width="85px" height="6px" fill="#544e75    "/>    
-            <rect className="city__lights" x="195" y="191" width="35px" height="6px"fill="#544e75 "/>   
-            <rect x="165" y="251" width="55px" height="6px" fill="#544e75    "/>           
-            <rect  className="city__lights" x="205" y="265" width="25px" height="6px" fill="#544e75    "/>    
-            <rect x="15" y="381" width="70px" height="70px" fill="#321551 "/> 
-            <rect x="55" y="351" width="40px" height="100px" fill="#321551 "/>  
-            <rect x="93" y="361" width="60px" height="90px" fill="#321551 "/> 
-            <rect x="690" y="371" width="60px" height="80px" fill="#321551 "/> 
-            <rect x="730" y="391" width="60px" height="59px" fill="#321551 "/> 
-            <rect x="25" y="399" width="55px" height="2px" fill="#14d3c2    "/>
-            <rect className="city__lights" x="65" y="419" width="45px" height="2px" fill="#14d3c2    "/> 
-            <rect x="95" y="378" width="15px" height="2px" fill="#14d3c2    "/> 
-            <rect x="703" y="399" width="35px" height="2px" fill="#14d3c2    "/>
-            <rect x="770" y="409" width="8px" height="2px" fill="#14d3c2    "/>
-            <rect x="773" y="402" width="5px" height="2px" fill="#14d3c2    "/>
-            <rect className="city__lights" x="713" y="429" width="65px" height="2px" fill="#14d3c2    "/>
-            <rect x="95" y="429" width="15px" height="2px" fill="#14d3c2    "/> 
+            {/* Telephone */}
+            {
+                !matchesTelephone && (
+                    <>
+                        <rect x="155" y="231" width="70px" height="220px" fill="#321551" />
+                        <rect x="185" y="151" width="170px" height="300px" fill="#321551" />
+                        <rect x="195" y="171" width="85px" height="6px" fill="#544e75" />
+                        <rect className="city__lights" x="195" y="191" width="35px" height="6px"fill="#544e75" />
+                        <rect x="165" y="251" width="55px" height="6px" fill="#544e75" />
+                        <rect className="city__lights" x="205" y="265" width="25px" height="6px" fill="#544e75" />
+                    </>
+                )
+            }
+            {/* Tablet */}
+            {
+                !matchesTablet && (
+                    <>
+                        <rect x="15" y="381" width="70px" height="70px" fill="#321551 "/>
+                        <rect x="55" y="351" width="40px" height="100px" fill="#321551 "/>  
+                        <rect x="93" y="361" width="60px" height="90px" fill="#321551 "/> 
+                        <rect x="690" y="371" width="60px" height="80px" fill="#321551 "/> 
+                        <rect x="730" y="391" width="60px" height="59px" fill="#321551 "/> 
+                        <rect x="25" y="399" width="55px" height="2px" fill="#14d3c2    "/>
+                        <rect className="city__lights" x="65" y="419" width="45px" height="2px" fill="#14d3c2    "/> 
+                        <rect x="95" y="378" width="15px" height="2px" fill="#14d3c2    "/> 
+                        <rect x="703" y="399" width="35px" height="2px" fill="#14d3c2    "/>
+                        <rect x="770" y="409" width="8px" height="2px" fill="#14d3c2    "/>
+                        <rect x="773" y="402" width="5px" height="2px" fill="#14d3c2    "/>
+                        <rect className="city__lights" x="713" y="429" width="65px" height="2px" fill="#14d3c2    "/>
+                        <rect x="95" y="429" width="15px" height="2px" fill="#14d3c2"/>
+                    </>
+                )
+            }
             <rect x="385" y="111" width="120px" height="340px" fill="#321551 "/>
             <rect x="397" y="125" width="10px" height="6px" fill="#544e75    "/>    
             <rect x="417" y="125" width="10px" height="6px" fill="#544e75    "/>    
@@ -67,16 +83,30 @@ export const CitySVG = () => {
             <rect x="457" y="185" width="10px" height="6px" fill="#544e75    "/>    
             <rect x="477" y="185" width="10px" height="6px" fill="#544e75    "/> 
             <rect x="477" y="205" width="10px" height="6px" fill="#544e75    "/> 
-            <rect x="525" y="151" width="90px" height="300px" fill="#321551 "/>
-            <rect className="city__lights" x="555" y="165" width="45px" height="6px" fill="#544e75    "/>  
-            <rect x="535" y="185" width="25px" height="6px" fill="#544e75    "/> 
-            <rect x="605" y="191" width="40px" height="250px" fill="#321551 "/>
-            <rect x="605" y="225" width="25px" height="6px" fill="#544e75    "/> 
+
+            {/* Telephone */}
+            {
+                !matchesTelephone && (
+                    <>
+                        <rect x="525" y="151" width="90px" height="300px" fill="#321551" />
+                        <rect className="city__lights" x="555" y="165" width="45px" height="6px" fill="#544e75" />
+                        <rect x="535" y="185" width="25px" height="6px" fill="#544e75" />
+                    </>
+                )
+            }
+
+            {/* Tablet */} 
+            { !matchesTablet && (<rect x="605" y="191" width="40px" height="250px" fill="#321551" />) }
+
+            {/* Telephone */}
+            { !matchesTelephone && (<rect x="605" y="225" width="25px" height="6px" fill="#544e75" />) }
 
             <rect x="245" y="191" width="220px" height="260px" fill="#5E40A4 "/>
             <rect x="120" y="281" width="110px" height="170px" fill="#5E40A4 "/>
             <rect x="470" y="221" width="110px" height="230px" fill="#5E40A4 "/>
-            <rect x="590" y="251" width="110px" height="200px" fill="#5E40A4 "/>
+
+            {/* Tablet */}
+            { !matchesTablet && (<rect x="590" y="251" width="110px" height="200px" fill="#5E40A4" />) }
 
             <rect x="379" y="191" width="85px" height="260px" fill="#423b66  "/>    
 
@@ -166,22 +196,30 @@ export const CitySVG = () => {
             <rect x="575" y="225" width="3px" height="225px" fill="#faefbe "/>
             <rect x="575" y="265" width="3px" height="185px" fill="#3d3154  "/>
 
+            {/* Tablet */}
+            {
+                !matchesTablet && (
+                    <>
+                        <rect x="590" y="251" width="110px" height="200px" fill="#5E40A4 "/>
+                        <rect x="590" y="251" width="25px" height="200px" fill="#423b66  "/>  
+                        <rect x="674" y="251" width="25px" height="200px" fill="#423b66  "/>    
+                        <rect x="592" y="261" width="105px" height="3px" fill="#273466  "/>
+                        <rect x="592" y="281" width="105px" height="3px" fill="#faefbe "/>
+                        <rect x="592" y="301" width="105px" height="3px" fill="#273466"/>
+                        <rect x="592" y="321" width="105px" height="3px" fill="#273466  "/>
+                        <rect className="city__lights" x="592" y="341" width="105px" height="3px" fill="#faefbe "/>
+                        <rect x="592" y="361" width="105px" height="3px" fill="#273466  "/>
+                        <rect x="592" y="381" width="105px" height="3px" fill="#faefbe "/>
+                        <rect className="city__lights" x="592" y="401" width="105px" height="3px" fill="#faefbe "/>
+                        <rect x="592" y="421" width="105px" height="3px" fill="#273466  "/>
+                        <rect x="592" y="441" width="105px" height="3px" fill="#faefbe "/>
+                    </>
+                )
+            }
 
-            <rect x="590" y="251" width="110px" height="200px" fill="#5E40A4 "/> 
-            <rect x="590" y="251" width="25px" height="200px" fill="#423b66  "/>  
-            <rect x="674" y="251" width="25px" height="200px" fill="#423b66  "/>    
-            <rect x="592" y="261" width="105px" height="3px" fill="#273466  "/>
-            <rect x="592" y="281" width="105px" height="3px" fill="#faefbe "/>
-            <rect x="592" y="301" width="105px" height="3px" fill="#273466"/>
-            <rect x="592" y="321" width="105px" height="3px" fill="#273466  "/>
-            <rect className="city__lights" x="592" y="341" width="105px" height="3px" fill="#faefbe "/>
-            <rect x="592" y="361" width="105px" height="3px" fill="#273466  "/>
-            <rect x="592" y="381" width="105px" height="3px" fill="#faefbe "/>
-            <rect className="city__lights" x="592" y="401" width="105px" height="3px" fill="#faefbe "/>
-            <rect x="592" y="421" width="105px" height="3px" fill="#273466  "/>
-            <rect x="592" y="441" width="105px" height="3px" fill="#faefbe "/>
+            {/* Telephone */}
+            { !matchesTelephone && (<rect x="155" y="231" width="70px" height="220px" fill="#321551" />) }
 
-            <rect x="155" y="231" width="70px" height="220px" fill="#321551 "/>
             <rect x="379" y="191" width="85px" height="260px" fill="#423b66  "/>  
 
             <circle className="city__star" cx="40" cy="100" r="2" fill="#fff"/>

@@ -34,7 +34,7 @@ export const HomeProjects = () => {
 
     return (
 
-        <div className="homeProjects__projectsContainer" id="projects">
+        <div id="projects" className="section homeProjects__projectsContainer">
             <section className="homeProjects__projectsContent">
 
                 <h2 className="homeProjects__projectsHeading">
