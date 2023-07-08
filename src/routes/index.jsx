@@ -16,9 +16,9 @@ export const Index = () => {
                 </Suspense>
             )}>
                 <Route path="/" element={<LazyHome />} />
-                <Route path="/:name" element={<LazyProject />} />
+                <Route key="/:name" path="/:name" element={<LazyProject />} />
             </Route>
-            <Route path="*" element={<Navigate to="/" replace/>} />
+            <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
 
     );

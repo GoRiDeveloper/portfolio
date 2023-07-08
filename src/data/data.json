@@ -16,7 +16,9 @@
                         "link": "https://github.com/GoRiJ/ApiEcommerce.git"
                     }
                 ],
-                "pathname": "servidor-api-rest-ecommerce"
+                "pathname": "servidor-api-rest-ecommerce",
+                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "date": "2023"
             },
             {
                 "id": 9856,
@@ -36,7 +38,9 @@
                         "link": "https://github.com/GheraldineSalazarL/Web_Bienestar_en_Fertilidad"
                     }
                 ],
-                "pathname": "bienestar-en-fertilidad"
+                "pathname": "bienestar-en-fertilidad",
+                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "date": "2023"
             },
             {
                 "id": 826532,
@@ -56,7 +60,9 @@
                         "link": "https://github.com/GoRiJ/ConTexto_Web.git"
                     }
                 ],
-                "pathname": "contexto"
+                "pathname": "contexto",
+                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "date": "2023"
             },
             {
                 "id": 6542,
@@ -76,7 +82,9 @@
                         "link": "https://github.com/GoRiJ/Guns_Gonzalez_Rivera.git"
                     }
                 ],
-                "pathname": "gunsgr"
+                "pathname": "gunsgr",
+                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "date": "2023"
             },
             {
                 "id": 1653291,
@@ -96,7 +104,9 @@
                         "link": "https://github.com/GoRiJ/pokedex.git"
                     }
                 ],
-                "pathname": "pokedex"
+                "pathname": "pokedex",
+                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "date": "2023"
             },
             {
                 "id": 101010,
@@ -116,7 +126,9 @@
                         "link": "https://github.com/GoRiJ/vite-blackjack.git"
                     }
                 ],
-                "pathname": "blackjack-game"
+                "pathname": "blackjack-game",
+                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "date": "2023"
             }
     
         ]

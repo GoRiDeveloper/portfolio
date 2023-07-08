@@ -8,12 +8,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include m.telephone {
-
-        padding: 6rem 2rem;
-
-    }
-
     &__container {
 
         position: relative;
@@ -70,8 +64,11 @@
         display: flex;
         justify-content: center;
         @include m.syntHeading(unset);
-        font-size: .67rem;
+        font-size: .8rem;
+        text-overflow: hidden;
+        white-space: nowrap;
         padding-bottom: .5rem;
+        overflow: hidden;
 
         @include m.telephone {
 
@@ -96,11 +93,17 @@
         padding: .5rem;
         font-size: .7rem;
 
+        @include m.tablet {
+
+            font-size: 1rem;
+
+        }
         
     }
 
     &__technologies {
 
+        padding: .5rem 1rem 2.5rem;
         display: flex;
         flex-direction: column;
 
@@ -108,9 +111,16 @@
 
     &__technologyHeading {
 
-        color: var(--primary-color);
+        padding-bottom: 1rem;
+        color: var(--primary-color-light-2);
         font-weight: 600;
         font-style: italic;
+        text-shadow: 0 0 3vw var(--primary-color);
+        letter-spacing: 1px;
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
+        animation: textShwAnim 2s infinite;
+        @include m.textShwAnim();
 
         @include m.telephone {
 
@@ -138,6 +148,17 @@
 
     }
 
+    &__technologyImage {
+
+        background-color: #26003126;
+        border: 1px solid rgb(255 255 255 / .18);
+        box-shadow: 0 var(--min-size-1) var(--tiny-size-3) 0 #1f26875e;
+        backdrop-filter: blur(1rem);
+        -webkit-backdrop-filter: blur(1rem);
+        border-radius: .6rem;
+
+    }
+
     &__technologyText {
 
         font-size: .7rem;
@@ -148,6 +169,122 @@
 
         }
 
+    }
+
+    &__info {
+
+        padding: 0 1rem .5rem;
+        display: flex;
+        gap: 1rem;
+
+    }
+
+    &__rol {
+
+        flex-basis: 50%;
+
+    }
+
+    &__date {
+
+        flex-basis: 50%;
+
+    }
+
+    &__rolHeading {
+
+        padding-bottom: 1rem;
+        color: var(--primary-color-light-2);
+        font-weight: 900;
+        font-style: italic;
+        text-shadow: 0 0 2vw var(--primary-color);
+        letter-spacing: 0px;
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
+        animation: textShwAnim 2s infinite;
+        @include m.textShwAnim();
+
+        @include m.telephone {
+
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+    &__rolText {
+
+        font-size: .7rem;
+
+        @include m.tablet {
+
+            font-size: 1rem;
+
+        }
+
+    }
+
+    &__dateHeading {
+
+        padding-bottom: 1rem;
+        color: var(--primary-color-light-2);
+        font-weight: 900;
+        font-style: italic;
+        text-shadow: 0 0 2vw var(--primary-color);
+        letter-spacing: 0px;
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
+        animation: textShwAnim 2s infinite;
+        @include m.textShwAnim();
+
+        @include m.telephone {
+
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+    &__dateText {
+
+        font-size: .7rem;
+
+        @include m.tablet {
+
+            font-size: 1rem;
+
+        }
+
+    }
+
+    &__buttons {
+
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1rem;
+
+        @include m.telephone {
+
+            flex-direction: row;
+
+        }
+
+    }
+
+    &__btn {
+
+        width: max-content;
+        @include m.syntBtn(true);
+
+        @include m.desktop {
+
+            width: max-content;
+
+        }
 
     }
 

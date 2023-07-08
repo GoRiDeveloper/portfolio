@@ -73,7 +73,7 @@ export const HomeProjects = () => {
                 <div className="homeProjects__projectsBox" ref={projectsBox}>
                     {
                         projects.map(project => (
-                            <CardProject key={project.id} projectInfo={project}/>
+                            <CardProject key={project.id} projectInfo={project} />
                         ))
                     }
                 </div>

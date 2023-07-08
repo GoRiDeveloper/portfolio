@@ -110,7 +110,7 @@ export const AsideMenu = () => {
                         }`}
                         onClick={handleHomePage}
                     >
-                        <img src="/assets/img/icons/menu_icons/house.svg" alt="icono del inicio" className="asideMenu__listIcon" width="35px" height="35px" />
+                        <img src="/assets/img/icons/menu_icons/house.svg" alt="icono del inicio" className="asideMenu__listIcon" width="35" height="35" />
                         <span className="asideMenu__link"> Inicio </span>
                     </li>
                     <li
@@ -119,7 +119,7 @@ export const AsideMenu = () => {
                         }`}
                         onClick={handleProjectsPage}
                     >
-                        <img src="/assets/img/icons/menu_icons/work.svg" alt="icono de proyectos" className="asideMenu__listIcon" width="35px" height="35px" />
+                        <img src="/assets/img/icons/menu_icons/work.svg" alt="icono de proyectos" className="asideMenu__listIcon" width="35" height="35" />
                         <span className="asideMenu__link"> Proyectos </span>
                         <img src="/assets/img/icons/menu_icons/down.svg" alt="icono de flecha hacia abajo" className="asideMenu__listIcon asideMenu__listIcon--chevronDown" width="35px" height="35px" />
                         <ul className="asideMenu__subMenu">
@@ -138,7 +138,7 @@ export const AsideMenu = () => {
                         }`}
                         onClick={handleSkillsPage}
                     >
-                        <img src="/assets/img/icons/menu_icons/idea.svg" alt="icono de habilidades" className="asideMenu__listIcon" />
+                        <img src="/assets/img/icons/menu_icons/idea.svg" alt="icono de habilidades" className="asideMenu__listIcon" width="35" height="35" />
                         <a className="asideMenu__link"> Habilidades </a>
                     </li>
                     <li
@@ -147,7 +147,7 @@ export const AsideMenu = () => {
                         }`}
                         onClick={handleAboutPage}
                     >
-                        <img src="/assets/img/icons/menu_icons/info.svg" alt="icono de about" className="asideMenu__listIcon" width="35px" height="35px" />
+                        <img src="/assets/img/icons/menu_icons/info.svg" alt="icono de about" className="asideMenu__listIcon" width="35" height="35" />
                         <span className="asideMenu__link"> Acerca de </span>
                         <img src="/assets/img/icons/menu_icons/down.svg" alt="icono de flecha hacia abajo" className="asideMenu__listIcon asideMenu__listIcon--chevronDown" width="35px" height="35px" />
                         <ul className="asideMenu__subMenu">
@@ -188,8 +188,8 @@ export const AsideMenu = () => {
             >
                 {
                     asideMenuOpen
-                        ? ( <img src="/assets/img/icons/sidebar_icons/open_menu.svg" className="asideMenu__exitImage" alt="icono de menu" width="35px" height="35px" /> )
-                        : ( <img src="/assets/img/icons/sidebar_icons/menu.svg" className="asideMenu__exitImage" alt="icono de menu" width="35px" height="35px" /> )
+                        ? ( <img src="/assets/img/icons/sidebar_icons/open_menu.svg" className="asideMenu__exitImage" alt="icono de menu" width="35" height="35" /> )
+                        : ( <img src="/assets/img/icons/sidebar_icons/menu.svg" className="asideMenu__exitImage" alt="icono de menu" width="35" height="35" /> )
                 }
             </button>
         </aside>

@@ -1,19 +1,32 @@
-import { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { Navigate, useLocation, useParams } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalContext";
 
 const Project = () => {
 
+    const location = useLocation();
     const { name } = useParams();
     const { projectsData } = useContext(GlobalContext);
+    const project = projectsData[0].projects.find(project => project.pathname === name);
+    
+    if (!project) 
+        return <Navigate to="/" />;
+
+    useEffect(() =>
+        window.scrollTo(0, 0),
+    [name]);
+
     const {
 
         name: projectName,
         desc,
         localImg,
-        technologies
+        technologies,
+        rol,
+        date,
+        redirectLinks
 
-    } = projectsData[0].projects.find(project => project.pathname === name);
+    } = project;
     const paragraphs = desc.split(".");
 
     return (
@@ -28,8 +41,8 @@ const Project = () => {
                         <span className="project__heading--title" data-text={projectName.toUpperCase()}> { projectName.toUpperCase() } </span>
                     </h2>
                     {
-                        paragraphs.map(paragraph => (
-                            <p key={paragraph} className="project__desc">{ paragraph }</p>
+                        paragraphs.map((paragraph, i) => (
+                            <p key={paragraph.indexOf(i) + i} className="project__desc">{ paragraph }.</p>
                         ))
                     }
                     <article className="project__technologies">
@@ -37,7 +50,7 @@ const Project = () => {
                         <div className="project__technologiesList">
                             {
                                 technologies.map(technology => (
-                                    <figure className="project__technology">
+                                    <figure key={technology} className="project__technology">
                                         <img src={`/assets/img/icons/skills_icons/${technology.toLowerCase()}.svg`} alt={technology} className="project__technologyImage" />
                                         <figcaption className="project__technologyText">{ technology }</figcaption>
                                     </figure>
@@ -45,6 +58,30 @@ const Project = () => {
                             }
                         </div>
                     </article>
+                    <div className="project__info">
+                        <article className="project__rol">
+                            <h3 className="project__rolHeading"> Rol : </h3>
+                            <p className="project__rolText">{ rol }.</p>
+                        </article>
+                        <article className="project__date">
+                            <h3 className="project__dateHeading"> Año : </h3>
+                            <p className="project__dateText">{ date }.</p>
+                        </article>
+                    </div>
+                    <div className="project__buttons">
+                        {
+                            redirectLinks.map(({ id, name, link }) => (
+                                <a
+                                    key={id}
+                                    href={link}
+                                    className="project__btn"
+                                    target="_blank"
+                                >
+                                    { name }
+                                </a>
+                            ))
+                        }
+                    </div>
                 </section>
             </div>
         </div>
