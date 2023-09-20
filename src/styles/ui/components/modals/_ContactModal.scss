@@ -2,62 +2,11 @@
 
 .contactModal {
 
-    position: relative;
-    padding: 2.5rem;
-    max-width: 43rem;
+    @include m.childModal();
     width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: transparent;
-    border: 2px solid rgb(255 255 255 / .1);
-    border-radius: .875rem;
-    box-shadow: 0 2px 5px rgb(0 0 0 / .2);
-    backdrop-filter: blur(.938rem);
-    -webkit-backdrop-filter: blur(.938rem);
-    transition: all .7s cubic-bezier(.5, 0, 0, 1);
 
     @include m.desktop {
-
-        width: 40%;
-
-    }
-
-    &__exitBtn {
-
-        position: absolute;
-        top: .3rem;
-        right: .3rem;
-        transition: transform .1s linear;
-        cursor: pointer;
-
-        &:hover {
-
-            transform: scale(1.1);
-
-        }
-
-        @include m.telephone {
-
-            top: .9rem;
-            right: .9rem;
-            
-        }
-
-    }
-
-    &__exitIcon {
-
-        width: 2.5rem;
-
-    }
-
-    &__heading {
-
-        position: relative;
-        @include m.syntHeading(0);
-
+        width: 50%;
     }
 
     &__form {
@@ -126,7 +75,6 @@
     &__message {
 
         width: 100%;
-
         border: none;
         outline: none;
         resize: none;
@@ -155,7 +103,7 @@
 
     &__submitBtn {
 
-        @include m.syntBtn(true);
+        @include m.syntBtn(false);
         width: max-content;
         color: var(--text-color);
 

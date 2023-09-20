@@ -5,7 +5,7 @@ import { CardProject } from "./CardProject";
 export const HomeProjects = () => {
 
     const projectsBox = useRef(null);
-    const { projectsData } = useContext(GlobalContext);
+    const { projectsData, showProjects } = useContext(GlobalContext);
     
     const keyProjects = "projects";
     const projects = projectsData[0][keyProjects];
@@ -34,13 +34,13 @@ export const HomeProjects = () => {
 
     return (
 
-        <div id="projects" className="section homeProjects__projectsContainer">
+        <div id="projects" className={`${showProjects ? "show" : "hide"} section homeProjects__projectsContainer`}>
             <section className="homeProjects__projectsContent">
-
                 <h2 className="homeProjects__projectsHeading">
                     <span className="homeProjects__projectsHeading--title" data-text="PROYECTOS"> PROYECTOS </span>
                 </h2>
                 <div className="homeProjects__projectsFilterButtons">
+
                     <button
                         className="homeProjects__projectsFilterButton"
                         data-filter="All"
@@ -57,6 +57,13 @@ export const HomeProjects = () => {
                     </button>
                     <button
                         className="homeProjects__projectsFilterButton"
+                        data-filter="FullStack"
+                        onClick={handleFilter}
+                    >
+                        Full Stack
+                    </button>
+                    <button
+                        className="homeProjects__projectsFilterButton"
                         data-filter="ReactJS"
                         onClick={handleFilter}
                     >
@@ -69,6 +76,7 @@ export const HomeProjects = () => {
                     >
                         Node JS + ExpressJS
                     </button>
+                    
                 </div>
                 <div className="homeProjects__projectsBox" ref={projectsBox}>
                     {
@@ -77,9 +85,8 @@ export const HomeProjects = () => {
                         ))
                     }
                 </div>
-
             </section>
-            <div className="homeProjects__projectBlob"></div>
+            {/* <div className="homeProjects__projectBlob"></div> */}
         </div>        
 
     );

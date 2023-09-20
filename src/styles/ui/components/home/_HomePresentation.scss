@@ -80,7 +80,11 @@
     &__heading {
 
         position: relative;
+        transition: opacity .3s ease-in;
+        opacity: 0;
+        animation: opacity 1.2s forwards;
         @include m.syntHeading(0);
+        @include m.opacity();
 
     }
 
@@ -104,6 +108,9 @@
                      0px 1px #fff,
                      0px 0px 12px var(--primary-color);
         letter-spacing: -1px;
+        transition: opacity .3s ease-in;
+        opacity: 0;
+        animation: opacity 1.2s forwards;
         transform: skewY(-10deg);
         z-index: 1;
 

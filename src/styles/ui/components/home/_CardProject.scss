@@ -134,7 +134,7 @@
     &__projectBtnMoreInfo {
 
         width: max-content;
-        @include m.syntBtn(true);
+        @include m.syntBtn(false);
 
     }
 

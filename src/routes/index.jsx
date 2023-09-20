@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import { Loader } from "../components/Loader";
 import { MainLayout } from "../layouts/main_layout/MainLayout";
 
 export const Index = () => {
@@ -11,7 +12,7 @@ export const Index = () => {
 
         <Routes>
             <Route element={(
-                <Suspense fallback={<span> loading... </span>}>
+                <Suspense fallback={<Loader />}>
                     <MainLayout />
                 </Suspense>
             )}>

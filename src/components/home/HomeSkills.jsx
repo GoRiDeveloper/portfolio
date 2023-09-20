@@ -8,7 +8,7 @@ export const HomeSkills = () => {
 
     return (
 
-        <section id="skills" className="section homeSkills">
+        <section id="skills" className="hide section homeSkills">
             <h2 className="homeSkills__heading">
                 <span className="homeSkills__heading--title" data-text="HABILIDADES"> HABILIDADES </span>
             </h2>

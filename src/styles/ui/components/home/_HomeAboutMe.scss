@@ -342,22 +342,18 @@
         gap: .5rem;
 
         @include m.telephone {
-
             gap: 1rem;
-
         }
 
         @include m.tablet {
-
-            gap: 2rem;
-            flex-direction: row;
-
+            gap: 1.5rem;
         }
 
     }
 
     &__text {
 
+        max-width: 70ch;
         font-size: .75rem;
         hyphens: none;
         z-index: 2;
@@ -389,7 +385,7 @@
         font-weight: 600;
         letter-spacing: 1px;
         pointer-events: none;
-        @include m.syntBtn(true);
+        @include m.syntBtn(false);
 
     }
 

@@ -1,3 +1,5 @@
+@use "./mixins" as m;
+
 #root {
 
     min-height: inherit;
@@ -32,5 +34,19 @@
     --white: #fff;
     --black: #000;
 
+
+}
+
+.hide {
+
+    transition: opacity .3s ease-in;
+    opacity: 0;
+
+}
+
+.show {
+
+    animation: opacity 1.2s forwards;
+    @include m.opacity();
 
 }

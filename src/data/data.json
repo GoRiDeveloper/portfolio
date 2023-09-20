@@ -4,26 +4,65 @@
         "projects": [
 
             {
+                "id": 1653291,
+                "name": "G-Blog",
+                "desc": "Sitio Full-Stack, en la parte Front-End estoy usando TypeScript con el Framework ReactJS, NextJS, para los estilos TailwindCSS, ReduxJS para los estados globales de la aplicación. En la parte Back-end estoy usando NodeJS, ExpressJS y TypeScript con una arquitectura escalable, separando las partes de la API para poder reutilizarlas si es necesario, y separando las carpetas correctamente. Manejo los errores bastante bien y sin ocupar mucho código repetido, para facilitar la resolución de bugs y errores futuros en la API. Para la persistencia estoy usando TypeORM, con una base de datos relacional la cual es PostgresSQL, diseñando y desarrollano el modelo entidad relación. Pero para persistir las imagenes por separado, estoy usando Firebase que me brinda un fácil acceso a las mismas. También estoy usando ZOD para validar la información antes de persistirla en mi base de datos. Para la lógica principal, recurro al patrón de diseño Modelo Vista Controlador, el cúal me deriva a el patrón de servicios, esto con el objetivo de abstraer el código lo máximo posible, incluso con la ayuda de TypeORM, uso repositorios y el patrón Factory con Inyección de Dependencias para abstraer aún más mi código y reutilizarlo. Es un gran reto este proyecto, es en el que estoy trabajando actualmente, continuando aplicando mis nuevos conocimientos en el, así como practicando los que ya tenía",
+                "localImg": "/assets/img/projects/construction.webp",
+                "technologies": ["NodeJS", "JavaScript", "ReactJS", "NextJS", "TypeScript", "Tailwind", "TypeORM", "Sockets"],
+                "redirectLinks": [
+                    {
+                        "id": 957914354,
+                        "name": "Código",
+                        "link": "https://github.com/GoRiDeveloper/G-Blog.git"
+                    }
+                ],
+                "pathname": "g-blog",
+                "rol": "Desarrollador Full-Stack, Diseñador Web y Dueño del Proyecto",
+                "date": "2023"
+            },
+            {
                 "id": 121314,
-                "name": "Servidor API Rest Ecommerce",
-                "desc": "API Data On Wire de un Ecommerce, con sistema de sesiones, usuarios, productos, carritos de usuario y ordenes de usuario, hecho con NodeJS y ExpressJS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
-                "localImg": "/assets/img/projects/ecommerce-api.webp",
-                "technologies": ["NodeJS", "ExpressJS"],
+                "name": "Servidor API Rest Meddy Plus",
+                "desc": "Aplicación de una clinica virtual completa, en la cual hay 3 roles, administradores, médicos y pacientes, cada uno con sus respectivas acciones dentro de la aplicación, hecha con Typescript, ReactJS, NodeJS, ExpressJS y TypeORM con PostgresSQL. Proyecto realizado gracias a No Country, en el que estoy como desarrollador Back-end, básicamente me encargue del modelado de la base de datos, con su diagrama entidad relación, la cual por motivos de una mejor lógica fue PostgreSQL. Diseñe la lógica principal de la API REST usando patrones de diseño tales como, inyección de dependencias, factory, dto y services. Me toco hacer el registro e inicio de sesión, creación de las citas médicas, endpoint para obtener esas citas médicas, gran parte de la creación de fechas de citas médicas de los médicos, creación de los registros médicos, gran parte del endpoint para editar ese registro médico, endpoint para obtener ese registro médico, endpoint para obtener la información del paciente, endpoint para obtener los médicos disponibles para citas médicas, endpoint para completar una cita médica, todos estos enpoints con sus respectivas rutas, schemas, middlewares, controllers, services y funciones para abstraer cierta lógica de esos enpoints. Tambien me encargue del manejo de errores de la aplicación y del deploy para que el Front-end pudiera utilizar facilmente distintas versiones de la aplicación, por último, tambien aporte un poco en la arquitectura de carpetas. El equipo se arriesgo a utilizar tecnologías nuevas que yo conocía, por lo cual también me encargue de instruirlos en los fundamentos principales de lo anteriormente mecionado, fortaleciendo así mis habilidades comunicación, capacidad de resolución, proactividad, organización, iniciativa y compromiso. Hubo varios retos, como cambiar una parte lógica de la API para un mejor desarrollo, pero solucionandolos con éxito. Un equipo de 8 personas con distintos roles, No Country nos da un Team Leader con el cual cada semana hacemos un sprint de los avances de la aplicación",
+                "localImg": "/assets/img/projects/meddy-plus.webp",
+                "technologies": ["NodeJS", "ExpressJS", "TypeScript", "TypeORM"],
                 "redirectLinks": [
                     {
                         "id": 238302,
+                        "name": "Sitio Web",
+                        "link": "https://meddyplus.netlify.app/"
+                    },
+                    {
+                        "id": 203832,
                         "name": "Código",
-                        "link": "https://github.com/GoRiJ/ApiEcommerce.git"
+                        "link": "https://github.com/No-Country/c13-34-t-node-react"
                     }
                 ],
-                "pathname": "servidor-api-rest-ecommerce",
-                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "pathname": "servidor-meddy-plus",
+                "rol": "Desarrollador Backend y Desarrollador de Bases de Datos",
+                "date": "2023"
+            },
+            {
+                "id": 101010,
+                "name": "Api Academlo Meals",
+                "desc": "Esta Api REST fue el proyecto final del curso de Backend con NodeJS de Academlo. En esta Api utilice las tecnologías de NodeJS, ExpressJS, TypeScript, TypeORM, ZOD. Utilice la base de datos PostgreSQL, por lo cual opte por el ORM de TypeORM, fue un desafio propio, ya que tuve 2 semanas para aprenderme la sintaxis necesaria de TypeScript y la libreria de TypeORM, ya que fue el tiempo que tuve para terminar el proyecto, pero fue bastante divertido y un gran aprendizaje bajo presión. También use ZOD para las validaciones de usuarios. Este proyecto es mi favorito, debido a su complejidad para mi en su momento, con un super manejo de errores y una estructura escalable de carpetas. En este proyecto tambien puse en practica distintos patrones de diseño, como lo son los servicios, repositorios que ya me brindo TypeORM, dto, factory que lo sigo aprendiendo cada que lo aplico",
+                "localImg": "/assets/img/projects/academlo-meals-api.webp",
+                "technologies": ["NodeJS", "ExpressJS", "Typescript"],
+                "redirectLinks": [
+                    {
+                        "id": 8525545371,
+                        "name": "Código",
+                        "link": "https://github.com/GoRiDeveloper/academlo-meals-api.git"
+                    }
+                ],
+                "pathname": "academlo-meals",
+                "rol": "Desarrollador Backend y Dueño del Proyecto",
                 "date": "2023"
             },
             {
                 "id": 9856,
                 "name": "Bienestar en Fertilidad",
-                "desc": "Sitio Web informativo sobre el servicio psicológico enfocado a la mujer que este transitando por dificultades en la fertilidad, hecho con HTML, Bootstrap y SASS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
+                "desc": "Sitio Web informativo sobre el servicio psicológico enfocado a la mujer que este transitando por dificultades en la fertilidad. Hecho con HTML, Bootstrap y SASS. Fue un proyecto en conjunto de una compañera de Coderhouse, utilizamos git y github para controlar las versiones del proyecto para manejarlo de manera más efectiva. Tuvimos buena comunicación, directa y cumpliendo los objetivos de nuestras clientas",
                 "localImg": "/assets/img/projects/bienestar-web.webp",
                 "technologies": ["HTML", "CSS", "JavaScript", "SASS", "Bootstrap"],
                 "redirectLinks": [
@@ -45,7 +84,7 @@
             {
                 "id": 826532,
                 "name": "Contexto",
-                "desc": "Sitio Web informativo sobre la venta de productos de higiene íntima reutilizables para mujeres, hecho con HTML, CSS y JavaScript. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
+                "desc": "Sitio Web informativo sobre la venta de productos de higiene íntima reutilizables para mujeres, hecho con HTML, CSS y JavaScript. También fue un proyecto con un compañero de Coderhouse, en el cual utilizamos Git y Github para controlar las versiones del proyecto. Tuvimos buena comunicación y cumplimos con el objetivo de nuestra clienta",
                 "localImg": "/assets/img/projects/contexto-web.webp",
                 "technologies": ["HTML", "CSS", "JavaScript"],
                 "redirectLinks": [
@@ -57,7 +96,7 @@
                     {
                         "id": 725400112,
                         "name": "Código",
-                        "link": "https://github.com/GoRiJ/ConTexto_Web.git"
+                        "link": "https://github.com/GoRiDeveloper/ConTexto_Web.git"
                     }
                 ],
                 "pathname": "contexto",
@@ -67,7 +106,7 @@
             {
                 "id": 6542,
                 "name": "GunsGR",
-                "desc": "Sitio Web de un Ecommerce de armas falso, hecho con CSS, ReactJS y Firebase. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
+                "desc": "Sitio Web de un Ecommerce de armas falso, hecho con CSS y ReactJS. Utilice Firestore para la persistencia de los datos y las rutas de las imagenes, en este caso opte por usar las imagenes localmente. Este proyecto fue el proyecto final del curso de ReactJS de la carrera FullStack de Coderhouse. Fue un reto aprender React pero fue bastante satisfactorio, aprender a usar los hooks de ReactJS, estados globales con Context y varias funcionalidades que nos permite React",
                 "localImg": "/assets/img/projects/gunsgr-web.webp",
                 "technologies": ["ReactJS", "CSS"],
                 "redirectLinks": [
@@ -79,54 +118,10 @@
                     {
                         "id": 81630101,
                         "name": "Código",
-                        "link": "https://github.com/GoRiJ/Guns_Gonzalez_Rivera.git"
+                        "link": "https://github.com/GoRiDeveloper/Guns_Gonzalez_Rivera.git"
                     }
                 ],
                 "pathname": "gunsgr",
-                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
-                "date": "2023"
-            },
-            {
-                "id": 1653291,
-                "name": "Pokédex",
-                "desc": "Sitio Web para mostrar la información de los personajes de Pokemón, que utiliza la API de pokeapi, hecho con ReactJS y SASS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
-                "localImg": "/assets/img/projects/pokedex-web.webp",
-                "technologies": ["ReactJS", "SASS"],
-                "redirectLinks": [
-                    {
-                        "id": 957914354,
-                        "name": "Sitio Web",
-                        "link": "https://pokedex-gdev.netlify.app/"
-                    },
-                    {
-                        "id": 18132093764,
-                        "name": "Código",
-                        "link": "https://github.com/GoRiJ/pokedex.git"
-                    }
-                ],
-                "pathname": "pokedex",
-                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
-                "date": "2023"
-            },
-            {
-                "id": 101010,
-                "name": "Juego de BlackJack",
-                "desc": "Juego Web de BlackJack, hecho con ReactJS y Bootstrap. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nihil dignissimos suscipit quam totam, exercitationem blanditiis corporis libero hic in earum consectetur temporibus eos perspiciatis asperiores saepe soluta excepturi nostrum! Saepe optio voluptatum dolore laudantium, iure ex quod eum, similique earum reiciendis temporibus soluta adipisci nostrum consequatur dicta nemo deserunt omnis ratione odio odit minus. Perferendis non earum dicta sapiente! Assumenda rerum neque, necessitatibus exercitationem tenetur sed voluptatem sequi? Sed saepe consequatur, neque pariatur, provident a consequuntur non facilis eaque quibusdam quas vel voluptas, placeat laborum porro. Aperiam, ducimus repellendus? Laudantium ab at, velit quo aut veritatis, nesciunt sapiente sit assumenda sed optio est sunt! Mollitia, quae! Id ducimus nostrum quidem similique ipsum voluptatibus ab necessitatibus explicabo atque fugiat? Voluptas! Eaque soluta corporis provident itaque, sed molestias repellat dignissimos nesciunt inventore doloremque ipsum blanditiis illo placeat fugit repudiandae rerum molestiae necessitatibus maiores labore? Incidunt porro obcaecati animi temporibus quibusdam sit. Ea, vel omnis deserunt repellat inventore placeat nulla commodi rerum mollitia quisquam minus fugit perferendis praesentium ducimus quo, rem expedita consequatur quaerat ullam, quidem voluptatibus. Voluptatem reprehenderit recusandae odit quam. Enim hic non velit aliquam, pariatur dolores nisi quaerat perferendis suscipit a modi earum obcaecati sapiente aperiam, iure cupiditate accusamus doloribus amet veritatis quod facilis recusandae aliquid. Accusantium, quia culpa? Voluptatibus, id magnam! Deleniti dolore eligendi numquam, sed minus, delectus odio vel, tempora provident autem eos velit ratione ab quis quia atque? Rerum ab quis alias iusto in recusandae esse. Sed quia nam sunt, veritatis magni corrupti fugit nulla obcaecati quis aspernatur voluptas nostrum deserunt! Doloremque nemo non pariatur molestiae, deserunt, obcaecati consectetur excepturi praesentium minima laboriosam sapiente explicabo fuga. Amet earum quaerat eaque consequuntur accusamus, ratione eligendi, optio quisquam eum necessitatibus eius facilis unde blanditiis sint minus dolorum? Alias incidunt totam soluta, voluptatum fuga delectus quidem accusamus veniam. Beatae?",
-                "localImg": "/assets/img/projects/blackjack-game.webp",
-                "technologies": ["ReactJS", "Bootstrap"],
-                "redirectLinks": [
-                    {
-                        "id": 18146789,
-                        "name": "Sitio Web",
-                        "link": "https://gorij.github.io/vite-blackjack/"
-                    },
-                    {
-                        "id": 8525545371,
-                        "name": "Código",
-                        "link": "https://github.com/GoRiJ/vite-blackjack.git"
-                    }
-                ],
-                "pathname": "blackjack-game",
                 "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
                 "date": "2023"
             }
@@ -151,10 +146,10 @@
     {
         "name": "skills",
         "skills": [
-            "apollo",
+            "typeorm",
             "bootstrap",
             "css",
-            "docker",
+            "sockets",
             "expressjs",
             "firebase",
             "git",

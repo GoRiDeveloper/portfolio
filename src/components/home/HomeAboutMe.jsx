@@ -7,7 +7,7 @@ export const HomeAboutMe = () => {
 
     return (
 
-        <section id="about" className="section homeAboutMe">
+        <section id="about" className="hide section homeAboutMe">
             <h2 className="homeAboutMe__heading">
                 <span className="homeAboutMe__heading--title" data-text="ACERCA DE MI"> ACERCA DE MI </span>
             </h2>
@@ -26,8 +26,8 @@ export const HomeAboutMe = () => {
                     
                     <h3 className="homeAboutMe__aboutHeading"> ¡Hola, Mi Nombre Es Govanni Gonzalez Rivera! </h3>
                     <div className="homeAboutMe__info">
-                        <p className="homeAboutMe__text"> Empecé mi carrera profesional en 2022, estudiando en CoderHouse la carrera de Desarrollador Full-Stack, y actualmente me encuentro cursando el Bootcamp de la misma carrera en Academlo. </p>
-                        <p className="homeAboutMe__text"> He trabajado en 2 proyectos como autónomo y actualmente me encuentro realizando proyectos nuevos para mantener a mis 4 gatos hijos. </p>
+                        <p className="homeAboutMe__text"> Empecé mi carrera profesional en 2021, en 2022 estudie en CoderHouse la carrera de Desarrollador Full-Stack, y graduado del Bootcamp de la misma carrera en Academlo, realizando varios proyectos, desafiandome a trabajar bajo presión, con un total de más de 78 semanas de practica continua y avanzando de manera autodidacta. </p>
+                        <p className="homeAboutMe__text"> Bastante dedicado en mis proyectos, los cuales me respaldan y he aumentado mis habilidades blandas en el entorno laboral, gracias a la emulación de NoCountry que me permitio desarrollar aun más mi comunicación, proactividad, capacidad de resolución, iniciativa, compromiso, capacidad de instruir y organización. </p>
                     </div>
                     <button
                         className="homeAboutMe__aboutContact"

@@ -160,6 +160,55 @@
 
 }
 
+@mixin childModal () {
+
+    position: relative;
+    padding: 2.5rem;
+    max-width: 43rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: 2px solid rgb(255 255 255 / .1);
+    border-radius: .875rem;
+    box-shadow: 0 2px 5px rgb(0 0 0 / .2);
+    backdrop-filter: blur(.938rem);
+    -webkit-backdrop-filter: blur(.938rem);
+    transition: all .7s cubic-bezier(.5, 0, 0, 1);
+
+    &__exitBtn {
+
+        position: absolute;
+        top: .3rem;
+        right: .3rem;
+        transition: transform .1s linear;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @include telephone {
+            top: .9rem;
+            right: .9rem;
+        }
+
+    }
+
+    &__exitIcon {
+        width: 2.5rem;
+    }
+
+    &__heading {
+
+        position: relative;
+        @include syntHeading(0);
+
+    }
+
+}
+
 @mixin syntHeading ($leftPos) {
 
     font-size: 1.6rem;
@@ -314,5 +363,24 @@
         }
 
     };
+
+}
+
+@mixin opacity {
+    
+    @keyframes opacity {
+
+        0% {
+
+            opacity: 0;
+
+        }
+        100% {
+
+            opacity: 1;
+
+        }
+
+    }
 
 }

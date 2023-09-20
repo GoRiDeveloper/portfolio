@@ -31,14 +31,19 @@
     &__exitBtn {
 
         @include m.menuBtn();
-
         &--close {
-
             pointer-events: none;
             opacity: 0;
-
         }
 
+    }
+
+    &__cvBtn {
+        @include m.menuBtn();
+        left: unset;
+        right: 0;
+        font-weight: 900;
+        color: var(--util-color)
     }
 
 }

@@ -1,0 +1,21 @@
+@use "../../../abstracts/mixins" as m;
+
+.cvModal {
+
+    @include m.childModal();
+
+    max-width: 60rem;
+    padding: 1.3rem;
+
+    @include m.telephone {
+        width: 85%;
+    }
+
+    &__curriculum {
+
+        width: 90%;
+        height: 80vh;
+
+    }
+
+}

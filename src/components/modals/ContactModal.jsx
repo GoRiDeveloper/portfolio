@@ -1,10 +1,8 @@
-export const ContactModal = ({ showModal, closeModal }) => {
+export const ContactModal = ({ closeModal }) => {
 
     return (
 
-        <dialog id="contact" className={`section contactModal ${
-            showModal && "contactModal--show"
-        }`}>
+        <dialog id="contact" className="section contactModal">
 
             <button
                 className="contactModal__exitBtn"
@@ -38,10 +36,10 @@ export const ContactModal = ({ showModal, closeModal }) => {
 
             </form>
             <div className="contactModal__contactButtons">
-                <a href="https://www.linkedin.com/in/govanni-rivera-desarrollador-web/" className="contactModal__contactBtn" target="_blank">
+                <a href="https://www.linkedin.com/in/govanni-rivera-desarrollador-full-stack/" className="contactModal__contactBtn" target="_blank">
                     <img src="/assets/img/icons/network_icons/linkedin-logo.svg" alt="linkedin logo" className="contactModal__icon" />
                 </a>
-                <a href="https://github.com/GoRiJ" className="contactModal__contactBtn" target="_blank">
+                <a href="https://github.com/GoRiDeveloper" className="contactModal__contactBtn" target="_blank">
                     <img src="/assets/img/icons/network_icons/github-logo.svg" alt="github logo" className="contactModal__icon" />
                 </a>
             </div>

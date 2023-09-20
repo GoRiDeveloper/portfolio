@@ -3,7 +3,7 @@
 .project {
 
     padding: 6rem 1rem;
-    background-image: url(/assets/img/backgrounds/section-background.jpg);
+    background-image: url(/assets/img/backgrounds/section-background.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,6 +162,7 @@
     &__technologyText {
 
         font-size: .7rem;
+        hyphens: none;
 
         @include m.telephone {
 
@@ -278,7 +279,7 @@
     &__btn {
 
         width: max-content;
-        @include m.syntBtn(true);
+        @include m.syntBtn(false);
 
         @include m.desktop {
 

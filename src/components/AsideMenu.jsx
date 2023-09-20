@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalContext";
+import { useObserver } from "../hooks/useObserver";
 import { Logo } from "./Logo";
 
 const SUBMENU_VALUES = {
@@ -11,45 +12,52 @@ const SUBMENU_VALUES = {
 export const AsideMenu = () => {
 
     const {
-
         asideMenuOpen,
         projectsData,
         showContactModal,
+        showHome,
+        showProjects,
         handleAsideMenu,
         handleContactModal
-
     } = useContext(GlobalContext);
     const navigate = useNavigate();
     const [activeSection, setActiveSection] = useState("");
+    const [observer, setElements, entries] = useObserver({
+        root: null,
+        rootMargin: "0px",
+        threshold: .3
+    });
 
     useEffect(() => {
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-
-    }, []);
-
-    const handleScroll = () => {
-
         const sections = document.querySelectorAll(".section");
-        const scrollPosition = window.scrollY;
+        setElements(sections);
 
-        sections.forEach(section => {
+    }, [showHome]);
 
-            const { top, bottom } = section.getBoundingClientRect();
+    useEffect(() => {
 
-            if (scrollPosition > top && scrollPosition < bottom)
-                setActiveSection(section.id);
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+console.log(entry);
+                const id = entry.target.id;
+                const classList = entry.target.classList;
+                const newActiveSection = id.split("#")[0];
+            
+                setActiveSection(newActiveSection);
+
+                if (!classList.contains("show")) {
+                    classList.remove("hide");
+                    classList.add("show");
+                };
+
+            };
 
         });
+            
+    }, [entries, observer]);
 
-        if (/\/.+$/.test(location.pathname))
-            setActiveSection("");
-
-        if (showContactModal)
-            setActiveSection("");
-
-    };
     const handleHomePage = () => {
 
         if (/\/.+$/.test(location.pathname)) 
@@ -96,7 +104,6 @@ export const AsideMenu = () => {
     };
 
     return (
-
         <aside className={`asideMenu ${
             !asideMenuOpen && "asideMenu--close" || ""
         }`}>
@@ -125,7 +132,15 @@ export const AsideMenu = () => {
                         <ul className="asideMenu__subMenu">
                             {
                                 projectsData[0][SUBMENU_VALUES.projects].map(item => (
-                                    <NavLink key={item.id} to={`/${item.pathname}`} className="asideMenu__subItem">
+                                    <NavLink
+                                        onClick={() => {
+                                            setActiveSection("");
+                                            handleAsideMenu();
+                                        }}
+                                        key={item.id}
+                                        to={`/${item.pathname}`}
+                                        className="asideMenu__subItem"
+                                    >
                                         <span className="asideMenu__subLink"> {item.name} </span>
                                     </NavLink>
                                 ))
@@ -174,9 +189,18 @@ export const AsideMenu = () => {
                         className={`asideMenu__item ${
                             showContactModal && "asideMenu__item--active" || ""
                         }`}
-                        onClick={handleContactModal}
+                        onClick={() => {
+                            handleContactModal();
+                            setActiveSection("");
+                        }}
                     >
-                        <img src="/assets/img/icons/menu_icons/contact.svg" alt="icono de contacto" className="asideMenu__listIcon" width="35px" height="35px" />
+                        <img
+                            src="/assets/img/icons/menu_icons/contact.svg"
+                            alt="icono de contacto"
+                            className="asideMenu__listIcon"
+                            width="35px"
+                            height="35px"
+                        />
                         <span className="asideMenu__link"> Contacto </span>
                     </button>
 
@@ -188,12 +212,27 @@ export const AsideMenu = () => {
             >
                 {
                     asideMenuOpen
-                        ? ( <img src="/assets/img/icons/sidebar_icons/open_menu.svg" className="asideMenu__exitImage" alt="icono de menu" width="35" height="35" /> )
-                        : ( <img src="/assets/img/icons/sidebar_icons/menu.svg" className="asideMenu__exitImage" alt="icono de menu" width="35" height="35" /> )
+                        ? (
+                            <img
+                                src="/assets/img/icons/sidebar_icons/open_menu.svg"
+                                className="asideMenu__exitImage"
+                                alt="icono de menu"
+                                width="35"
+                                height="35"
+                            />
+                        )
+                        : (
+                            <img
+                                src="/assets/img/icons/sidebar_icons/menu.svg"
+                                className="asideMenu__exitImage"
+                                alt="icono de menu"
+                                width="35"
+                                height="35"
+                            />
+                        )
                 }
             </button>
         </aside>
-
     );
 
 };

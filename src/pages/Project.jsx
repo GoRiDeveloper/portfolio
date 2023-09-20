@@ -1,10 +1,9 @@
 import { useContext, useEffect } from "react";
-import { Navigate, useLocation, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalContext";
 
 const Project = () => {
 
-    const location = useLocation();
     const { name } = useParams();
     const { projectsData } = useContext(GlobalContext);
     const project = projectsData[0].projects.find(project => project.pathname === name);
@@ -17,7 +16,6 @@ const Project = () => {
     [name]);
 
     const {
-
         name: projectName,
         desc,
         localImg,
@@ -25,7 +23,6 @@ const Project = () => {
         rol,
         date,
         redirectLinks
-
     } = project;
     const paragraphs = desc.split(".");
 
