@@ -16,7 +16,6 @@ export const AsideMenu = () => {
         projectsData,
         showContactModal,
         showHome,
-        showProjects,
         handleAsideMenu,
         handleContactModal
     } = useContext(GlobalContext);
@@ -40,12 +39,18 @@ export const AsideMenu = () => {
         entries.forEach(entry => {
 
             if (entry.isIntersecting) {
-console.log(entry);
+
                 const id = entry.target.id;
                 const classList = entry.target.classList;
                 const newActiveSection = id.split("#")[0];
             
                 setActiveSection(newActiveSection);
+
+                if (newActiveSection === "projects") {
+                    classList.remove("show")
+                    classList.add("hide")
+
+                };
 
                 if (!classList.contains("show")) {
                     classList.remove("hide");

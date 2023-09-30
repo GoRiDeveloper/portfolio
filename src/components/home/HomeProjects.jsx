@@ -1,12 +1,13 @@
-import { useContext, useRef } from "react";
+import { useState, useContext, useRef, useEffect } from "react";
 import { GlobalContext } from "../../context/GlobalContext";
 import { CardProject } from "./CardProject";
 
 export const HomeProjects = () => {
 
+    const [width, setWidth] = useState(window.innerWidth);
     const projectsBox = useRef(null);
-    const { projectsData, showProjects } = useContext(GlobalContext);
-    
+    const { projectsData, showProjects, handleShowProjects } = useContext(GlobalContext);
+
     const keyProjects = "projects";
     const projects = projectsData[0][keyProjects];
 
@@ -31,6 +32,17 @@ export const HomeProjects = () => {
         });
 
     };
+    const handleWidth = () => setWidth(window.innerWidth);
+    const handleProjects = () => {
+        const { matches } = matchMedia("(max-width: 736px)");
+        if ((width < 736 || matches) && !showProjects) handleShowProjects();
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", handleWidth);
+        handleProjects();
+        return () => window.removeEventListener("resize", handleWidth);
+    });
 
     return (
 
