@@ -5,20 +5,47 @@
 
             {
                 "id": 1653291,
-                "name": "G-Blog",
-                "desc": "Sitio Full-Stack, en la parte Front-End estoy usando TypeScript con el Framework ReactJS, NextJS, para los estilos TailwindCSS, ReduxJS para los estados globales de la aplicación. En la parte Back-end estoy usando NodeJS, ExpressJS y TypeScript con una arquitectura escalable, separando las partes de la API para poder reutilizarlas si es necesario, y separando las carpetas correctamente. Manejo los errores bastante bien y sin ocupar mucho código repetido, para facilitar la resolución de bugs y errores futuros en la API. Para la persistencia estoy usando TypeORM, con una base de datos relacional la cual es PostgresSQL, diseñando y desarrollano el modelo entidad relación. Pero para persistir las imagenes por separado, estoy usando Firebase que me brinda un fácil acceso a las mismas. También estoy usando ZOD para validar la información antes de persistirla en mi base de datos. Para la lógica principal, recurro al patrón de diseño Modelo Vista Controlador, el cúal me deriva a el patrón de servicios, esto con el objetivo de abstraer el código lo máximo posible, incluso con la ayuda de TypeORM, uso repositorios y el patrón Factory con Inyección de Dependencias para abstraer aún más mi código y reutilizarlo. Es un gran reto este proyecto, es en el que estoy trabajando actualmente, continuando aplicando mis nuevos conocimientos en el, así como practicando los que ya tenía",
-                "localImg": "/assets/img/projects/construction.webp",
-                "technologies": ["NodeJS", "JavaScript", "ReactJS", "NextJS", "TypeScript", "Tailwind", "TypeORM", "Sockets"],
+                "name": "G-iscord",
+                "desc": "Clon de la aplicación de Discord, hecha con el proposito de poner a prueba mis habilidades técnicas en una aplicación de complejidad media-alta aplicando conceptos de la Clean Architecture. En esta aplicación utilicé la librería de Shadcn con Tailwind, WebSockets para la comunicación en tiempo real de los chats y canales de la aplicación, Uploadthing para subir los archivos que envien los usuarios, LiveKit para la comunicación de las llamadas y videollamadas, Axios para las peticiones http, React Hook Form y ZOD para manipular los formularios de la aplicación. Tiene funcionalidades de chat en tiempo real en canales de servidores, canales de conversaciones con miembros del servidor, llamadas y videollamadas en ambas partes del chat, posibilidad de compartir imágenes y archivos PDF, configuraciones para modificar, eliminar y crear elementos en la aplicación, links de invitacion a nuevos miembros y chats temporales al realizar las llamadas y la funcionalidad de cambiar de tema claro/oscuro",
+                "localImg": "/assets/img/projects/g-iscord.webp",
+                "technologies": ["JavaScript", "ReactJS", "NextJS", "TypeScript", "Tailwind", "Shadcn", "PrismaORM", "Sockets", "NodeJS"],
                 "redirectLinks": [
+                    {
+                        "id": 2383021839663,
+                        "name": "Sitio Web",
+                        "link": "https://g-iscord.vercel.app/"
+                    },
                     {
                         "id": 957914354,
                         "name": "Código",
-                        "link": "https://github.com/GoRiDeveloper/G-Blog.git"
+                        "link": "https://github.com/GoRiDeveloper/discord_clone.git"
                     }
                 ],
-                "pathname": "g-blog",
-                "rol": "Desarrollador Full-Stack, Diseñador Web y Dueño del Proyecto",
-                "date": "2023"
+                "pathname": "g-iscord",
+                "rol": "Desarrollador Full-Stack",
+                "date": "2024"
+            },
+            {
+                "id": 6542,
+                "name": "Humanitarian Aid",
+                "desc": "Aplicación de ayuda humanitaria, hecha con NextJS, Redux y Redux Toolkit para las peticiones http, React Hook Form y ZOD para el manejo de formularios. Pude instruir a mi equipo en diversas dificultades ante tecnologías nuevas qué utilizamos en la aplicación, y realizar con éxito distintas funcionalidades de la aplicación útilizando buenas prácticas de código y una arquitectura limpia de carpetas. Me encargue de las secciones del perfil de usuario, autenticación, donativos y la resolución de algunos bugs en el diseño de la aplicación",
+                "localImg": "/assets/img/projects/humanitarian-aid.webp",
+                "technologies": ["ReactJS", "Shadcn", "Tailwind", "NextJS", "Redux"],
+                "redirectLinks": [
+                    {
+                        "id": 871,
+                        "name": "Sitio Web",
+                        "link": "https://s12-18-tn-csharp-next.vercel.app/"
+                    },
+                    {
+                        "id": 81630101,
+                        "name": "Código",
+                        "link": "https://github.com/No-Country/s12-18-tn-csharp-next.git"
+                    }
+                ],
+                "pathname": "gunsgr",
+                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
+                "date": "2024"
             },
             {
                 "id": 121314,
@@ -102,28 +129,6 @@
                 "pathname": "contexto",
                 "rol": "Desarrollador y Diseñador Web",
                 "date": "2023"
-            },
-            {
-                "id": 6542,
-                "name": "GunsGR",
-                "desc": "Sitio Web de un Ecommerce de armas falso, hecho con CSS y ReactJS. Utilice Firestore para la persistencia de los datos y las rutas de las imagenes, en este caso opte por usar las imagenes localmente. Este proyecto fue el proyecto final del curso de ReactJS de la carrera FullStack de Coderhouse. Fue un reto aprender React pero fue bastante satisfactorio, aprender a usar los hooks de ReactJS, estados globales con Context y varias funcionalidades que nos permite React",
-                "localImg": "/assets/img/projects/gunsgr-web.webp",
-                "technologies": ["ReactJS", "CSS"],
-                "redirectLinks": [
-                    {
-                        "id": 871,
-                        "name": "Sitio Web",
-                        "link": "https://gunsgr.netlify.app/"
-                    },
-                    {
-                        "id": 81630101,
-                        "name": "Código",
-                        "link": "https://github.com/GoRiDeveloper/Guns_Gonzalez_Rivera.git"
-                    }
-                ],
-                "pathname": "gunsgr",
-                "rol": "Desarrollador, Diseñador Web y Dueño del Proyecto",
-                "date": "2023"
             }
     
         ]
@@ -163,7 +168,10 @@
             "reactjs",
             "sass",
             "tailwind",
-            "typescript"
+            "typescript",
+            "shadcn",
+            "redux",
+            "prismaorm"
         ]
     }
 ]

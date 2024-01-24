@@ -11,7 +11,7 @@ export const CVModal = ({ closeModal }) => {
             <h2 className="cvModal__heading">
                 <span className="cvModal__heading--title" data-text="CURRÍCULUM"> CURRÍCULUM </span>
             </h2>
-            <iframe className="cvModal__curriculum" src="/assets/file/GovanniGonzálezRivera-CV-DesarrolladorFullStack.pdf"></iframe>
+            <iframe src="https://drive.google.com/file/d/1jPzcmewSGkXfD33kmxQn2MDg1QaVgZCP/preview" width="640" height="480" allow="autoplay"></iframe>
         </dialog>
     );
 

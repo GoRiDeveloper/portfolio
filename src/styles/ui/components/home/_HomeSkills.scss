@@ -68,11 +68,11 @@
 
             &:nth-child(#{$i}) {
 
-                transform: rotateY($degSummary + deg) translateZ(22rem);
+                transform: rotateY($degSummary + deg) translateZ(23.5rem);
 
             }
 
-            $degSummary: $degSummary + 20;
+            $degSummary: $degSummary + 17;
 
         }
 
